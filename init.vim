@@ -16,6 +16,7 @@ Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
 Plug 'rakr/vim-one'
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
+Plug 'airblade/vim-gitgutter'
 "Plug 'chriskempson/base16-vim'
 " call PlugInstall to install new plugins
 call plug#end()
@@ -86,6 +87,8 @@ let g:airline_theme='monochrome'
 set background=dark
 colorscheme one
 
+"GitGutter
+set updatetime=100
 
 "NERDTree
 " How can I close vim if the only window left open is a NERDTree?

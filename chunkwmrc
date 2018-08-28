@@ -136,3 +136,4 @@ chunkc tiling::rule --owner \"Microsoft Outlook\" --state float
 chunkc tiling::rule --owner \"IntelliJ IDEA\" --state float
 chunkc tiling::rule --owner \"zoom.us\" --state float
 chunkc tiling::rule --owner \"DataGrip.app\" --state float
+chunkc tiling::rule --owner \"PyCharm\" --state float
