@@ -102,3 +102,19 @@ echo -e "\033]6;1;bg;green;brightness;26\a"
 echo -e "\033]6;1;bg;blue;brightness;33\a"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+<<<<<<< HEAD
+=======
+
+export DRONE_SERVER=https://drone-github.skyscannertools.net
+export DRONE_TOKEN=xxx
+
+# Jabba (Java version management)
+if [ -s "$HOME/.jabba/jabba.sh" ]; then
+  source "$HOME/.jabba/jabba.sh"
+ 
+  function __jabba_on_cd() {
+    [[ -f "./.jabbarc" ]] && echo "\n☕️⚡️ Setting Jabba JDK from .jabbarc in $PWD: $(cat .jabbarc | tr -d "\n")" && jabba use
+  }
+  chpwd_functions=(${chpwd_functions[@]} "__jabba_on_cd")
+fi
+>>>>>>> 98c00b5... initial commit
